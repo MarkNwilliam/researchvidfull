@@ -1,0 +1,453 @@
+2025-03-26 17:41:39,792 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://192.168.1.164:4000
+2025-03-26 17:41:39,794 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-26 17:41:39,813 - INFO -  * Restarting with watchdog (fsevents)
+2025-03-26 17:41:40,444 - WARNING -  * Debugger is active!
+2025-03-26 17:41:40,459 - INFO -  * Debugger PIN: 423-760-448
+2025-03-26 17:41:59,036 - INFO - Incoming Request: POST /api/generate-questions
+2025-03-26 17:41:59,054 - INFO - Headers: {'Host': 'localhost:4000', 'User-Agent': 'curl/7.85.0', 'Accept': '*/*', 'Content-Type': 'application/json', 'Content-Length': '317'}
+2025-03-26 17:41:59,062 - INFO - Request Body: {
+    "pdf_url": "http://arxiv.org/pdf/2105.14199v1",
+    "title": "Sample Paper",
+    "num_questions": 3,
+    "difficulty": "hard",
+    "question_type": "mixed",
+    "description": "Focus on questions that test understanding of the economic models used and their practical implications for developing countries."
+  }
+2025-03-26 17:41:59,068 - INFO - Question generation request data: {'pdf_url': 'http://arxiv.org/pdf/2105.14199v1', 'title': 'Sample Paper', 'num_questions': 3, 'difficulty': 'hard', 'question_type': 'mixed', 'description': 'Focus on questions that test understanding of the economic models used and their practical implications for developing countries.'}
+2025-03-26 17:42:00,067 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '50'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '79816daa-0a50-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2025-03-26 17:42:02,571 - INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/34874997-ac19-43eb-9f6e-d2762522092c?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '192'
+    'apim-request-id': '34874997-ac19-43eb-9f6e-d2762522092c'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:42:01 GMT'
+2025-03-26 17:42:02,811 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/34874997-ac19-43eb-9f6e-d2762522092c?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '79816daa-0a50-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:42:03,354 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '43'
+    'apim-request-id': '4befb4fe-a895-4945-885a-bbff5f3cc81b'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:42:02 GMT'
+2025-03-26 17:42:06,382 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/34874997-ac19-43eb-9f6e-d2762522092c?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '79816daa-0a50-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:42:06,748 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '1'
+    'x-envoy-upstream-service-time': '26'
+    'apim-request-id': '61a4c8df-2703-4870-8336-3340d13e65b1'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:42:06 GMT'
+2025-03-26 17:42:07,761 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/34874997-ac19-43eb-9f6e-d2762522092c?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '79816daa-0a50-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:42:10,804 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '675310'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '79'
+    'apim-request-id': 'c5eb12f9-4563-4a33-95fc-bf87a8fe1bea'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:42:07 GMT'
+2025-03-26 17:42:30,527 - INFO - HTTP Request: POST https://aitutorial.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-05-01-preview "HTTP/1.1 200 OK"
+2025-03-26 17:42:30,926 - INFO - HTTP Request: POST https://aitutorial.openai.azure.com/openai/deployments/text-embedding-3-large/embeddings?api-version=2024-05-01-preview "HTTP/1.1 200 OK"
+2025-03-26 17:42:31,139 - INFO - Request URL: 'https://researchpapers.search.windows.net/indexes('paper-videos')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '73184'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '8c06b48a-0a50-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-search-documents/11.5.2 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+A body is sent with the request
+2025-03-26 17:42:33,671 - INFO - Response status: 400
+Response headers:
+    'Content-Length': '251'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Language': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'request-id': '8c06b48a-0a50-11f0-b94d-2adde81e206b'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Wed, 26 Mar 2025 14:42:34 GMT'
+2025-03-26 17:42:33,676 - INFO - Generated 3 questions
+2025-03-26 17:42:33,678 - INFO - Outgoing Response: 200 OK
+2025-03-26 17:42:33,678 - INFO - Response Data: {
+  "metadata": {
+    "difficulty": "hard",
+    "doc_id": "1d73392d00a1d481e34966ef3b1ab721e0dd39e1e4899921d7e83b6d738ad47d",
+    "generated_at": "Wed Mar 26 17:42:11 2025",
+    "paper_title": "Sample Paper",
+    "question_type": "mixed",
+    "user_description": "Focus on questions that test understanding of the economic models used and their practical implications for developing countries."
+  },
+  "questions": [
+    {
+      "correct_answer": "a",
+      "explanation": {
+        "additional_context": "Neoclassical growth models emphasize traditional factors like labor and capital along with technology but do not directly integrate policy stability as a variable.",
+        "correct": "Government policy stability is not mentioned as a direct factor in neoclassical growth models which focus on land, labor, capital accumulation, and technology.",
+        "incorrect": {
+          "b": "Capital accumulation is explicitly mentioned as a factor in the neoclassical growth models.",
+          "c": "Labor growth is identified as a crucial variable affecting productivity in the neoclassical growth models.",
+          "d": "Technological advancements are a key component of the factors affecting long-run productivity in the neoclassical growth models."
+        }
+      },
+      "options": {
+        "a": "Government policy stability",
+        "b": "Capital accumulation",
+        "c": "Labor growth",
+        "d": "Technological advancements"
+      },
+      "question": "According to the neoclassical growth models discussed in the paper, which factor is not directly considered a variable affecting long-run productivity?"
+    },
+    {
+      "correct_answer": "a",
+      "explanation": {
+        "additional_context": "The paper discusses the IS-LM theory in the context of public investment potentially having a crowding-out effect on private investment by affecting interest rates and available financial resources.",
+        "correct": "According to the IS-LM theory as mentioned, an increase in government spending can lead to a crowding-out effect on private investment by shifting the IS curve.",
+        "incorrect": {
+          "b": "While some studies like those by Aschauer suggest a crowding-in effect, the IS-LM theory specifically predicts a crowding-out effect in this scenario.",
+          "c": "The IS-LM theory does not support the notion that government spending and private investment are independent in their effects on economic models.",
+          "d": "Direct government incentives for private investment are not a part of the immediate mechanism described by the IS-LM theory."
+        }
+      },
+      "options": {
+        "a": "Decrease due to crowding-out effect",
+        "b": "Increase due to crowding-in effect",
+        "c": "No change as they are independent",
+        "d": "Increase due to direct government incentives"
+      },
+      "question": "In the context of the IS-LM theory mentioned in the paper, what is the immediate effect of an increase in government spending on private investment?"
+    },
+    {
+      "correct_answer": "c",
+      "explanation": {
+        "additional_context": "The paper underscores the complexity and variability in the relationship between public and private investment, influenced by a multitude of factors specific to each country's economic environment.",
+        "correct": "The paper reviews various empirical studies with differing outcomes where some studies showed crowding-in effects while others indicated crowding-out effects, leading to mixed results.",
+        "incorrect": {
+          "a": "Not all studies show a crowding-out effect; some have found crowding-in effects, indicating inconsistency.",
+          "b": "Similarly, not all studies support a crowding-in effect exclusively.",
+          "d": "Significant relationships have been observed, but they vary, contradicting the option that no significant relationship has been detected."
+        }
+      },
+      "options": {
+        "a": "Consistently shows a crowding-out effect",
+        "b": "Consistently shows a crowding-in effect",
+        "c": "Results are mixed depending on other economic factors",
+        "d": "No significant relationship has been observed"
+      },
+      "question": "Based on the empirical studies cited in the paper, what can be inferred about the relationship between public investment and private investment in developing countries?"
+    }
+  ]
+}
+
+2025-03-26 17:42:33,680 - INFO - 127.0.0.1 - - [26/Mar/2025 17:42:33] "POST /api/generate-questions HTTP/1.1" 200 -
+2025-03-26 17:47:01,953 - INFO - Incoming Request: OPTIONS /api/generate-questions
+2025-03-26 17:47:01,970 - INFO - Headers: {'Host': 'localhost:4000', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'http://localhost:3001', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-03-26 17:47:01,972 - INFO - Outgoing Response: 200 OK
+2025-03-26 17:47:01,972 - INFO - Response Data: {
+  "message": "Preflight Request"
+}
+
+2025-03-26 17:47:01,975 - INFO - 127.0.0.1 - - [26/Mar/2025 17:47:01] "OPTIONS /api/generate-questions HTTP/1.1" 200 -
+2025-03-26 17:47:01,981 - INFO - Incoming Request: POST /api/generate-questions
+2025-03-26 17:47:01,981 - INFO - Headers: {'Host': 'localhost:4000', 'Connection': 'keep-alive', 'Content-Length': '343', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', 'Sec-Ch-Ua': '"Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:3001', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+2025-03-26 17:47:01,990 - INFO - Request Body: {"pdf_url":"https://researchvid-b3awhubzagh9hjaq.canadacentral-01.azurewebsites.net/api/getproxypdf?url=http%3A%2F%2Farxiv.org%2Fpdf%2F2105.14199v1","title":"Impact of Public and Private Investments on Economic Growth of\n  Developing Countries","num_questions":5,"difficulty":"medium","question_type":"mixed","description":"simple questions"}
+2025-03-26 17:47:01,997 - INFO - Question generation request data: {'pdf_url': 'https://researchvid-b3awhubzagh9hjaq.canadacentral-01.azurewebsites.net/api/getproxypdf?url=http%3A%2F%2Farxiv.org%2Fpdf%2F2105.14199v1', 'title': 'Impact of Public and Private Investments on Economic Growth of\n  Developing Countries', 'num_questions': 5, 'difficulty': 'medium', 'question_type': 'mixed', 'description': 'simple questions'}
+2025-03-26 17:47:05,994 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '152'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '2fd9f55e-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+2025-03-26 17:47:07,685 - INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/35864fb7-1495-4630-ad35-cb6d2d1677b0?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '274'
+    'apim-request-id': '35864fb7-1495-4630-ad35-cb6d2d1677b0'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:47:07 GMT'
+2025-03-26 17:47:07,691 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/35864fb7-1495-4630-ad35-cb6d2d1677b0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '2fd9f55e-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:47:08,012 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '4'
+    'x-envoy-upstream-service-time': '29'
+    'apim-request-id': '760e1014-d071-4f2d-b35a-fac1edead29a'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:47:07 GMT'
+2025-03-26 17:47:12,019 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/35864fb7-1495-4630-ad35-cb6d2d1677b0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '2fd9f55e-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:47:12,345 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '1'
+    'x-envoy-upstream-service-time': '32'
+    'apim-request-id': 'd47a3fe8-5a3c-452e-94c5-6c16f2debabe'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:47:12 GMT'
+2025-03-26 17:47:13,354 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/35864fb7-1495-4630-ad35-cb6d2d1677b0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '2fd9f55e-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:47:13,709 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '1'
+    'x-envoy-upstream-service-time': '29'
+    'apim-request-id': 'b558aae2-5570-4e72-a811-54000d09f201'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:47:13 GMT'
+2025-03-26 17:47:14,716 - INFO - Request URL: 'https://papervideorg.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/35864fb7-1495-4630-ad35-cb6d2d1677b0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '2fd9f55e-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+2025-03-26 17:47:18,242 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '675310'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '72'
+    'apim-request-id': '443fa1cf-bfc7-448e-9eb1-b41dfa549d71'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Wed, 26 Mar 2025 14:47:14 GMT'
+2025-03-26 17:47:47,935 - INFO - HTTP Request: POST https://aitutorial.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-05-01-preview "HTTP/1.1 200 OK"
+2025-03-26 17:47:48,342 - INFO - HTTP Request: POST https://aitutorial.openai.azure.com/openai/deployments/text-embedding-3-large/embeddings?api-version=2024-05-01-preview "HTTP/1.1 200 OK"
+2025-03-26 17:47:48,357 - INFO - Request URL: 'https://researchpapers.search.windows.net/indexes('paper-videos')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '74416'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '491a3b46-0a51-11f0-b94d-2adde81e206b'
+    'User-Agent': 'azsdk-python-search-documents/11.5.2 Python/3.12.0 (macOS-13.1-arm64-arm-64bit)'
+A body is sent with the request
+2025-03-26 17:47:51,147 - INFO - Response status: 400
+Response headers:
+    'Content-Length': '251'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Language': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'request-id': '491a3b46-0a51-11f0-b94d-2adde81e206b'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Wed, 26 Mar 2025 14:47:51 GMT'
+2025-03-26 17:47:51,151 - INFO - Generated 5 questions
+2025-03-26 17:47:51,152 - INFO - Outgoing Response: 200 OK
+2025-03-26 17:47:51,152 - INFO - Response Data: {
+  "metadata": {
+    "difficulty": "medium",
+    "doc_id": "a0c32315029c3e3758040523b1d20e063640d2a499478c4df440d3a375e11c7e",
+    "generated_at": "Wed Mar 26 17:47:18 2025",
+    "paper_title": "Impact of Public and Private Investments on Economic Growth of Developing Countries",
+    "question_type": "mixed",
+    "user_description": "simple questions"
+  },
+  "questions": [
+    {
+      "correct_answer": "a",
+      "explanation": {
+        "additional_context": "This distinction is crucial as it highlights the importance of government-led initiatives in stimulating economic growth.",
+        "correct": "The paper states that public investment has a strong positive impact on economic growth compared to private investment.",
+        "incorrect": {
+          "b": "Private investment, though important, was found less impactful than public investment.",
+          "c": "Foreign direct investment is discussed, but it's not highlighted as having a stronger impact than public investment.",
+          "d": "The paper specifically points out that public investment has a stronger impact, not that all investments have equal impact."
+        }
+      },
+      "options": {
+        "a": "Public investment",
+        "b": "Private investment",
+        "c": "Foreign direct investment",
+        "d": "All have equal impact"
+      },
+      "question": "Which type of investment was found to have a stronger impact on economic growth in developing countries according to the paper?"
+    },
+    {
+      "correct_answer": "c",
+      "explanation": {
+        "additional_context": "Neoclassical growth models are essential for understanding the roles of various economic factors in growth, as cited by the paper.",
+        "correct": "The study was based on neoclassical growth models, which focus on factors like land, labor, capital accumulation, and technology affecting long-term productivity and economic growth.",
+        "incorrect": {
+          "a": "Marxist economic theory is not mentioned within the context of this paper.",
+          "b": "While Keynesian concepts might influence aspects of public investment discussions, it's not the primary theoretical framework used.",
+          "d": "Behavioral economic models are not mentioned as a framework for this analysis."
+        }
+      },
+      "options": {
+        "a": "Marxist economic theory",
+        "b": "Keynesian economic theory",
+        "c": "Neoclassical growth models",
+        "d": "Behavioral economic models"
+      },
+      "question": "What theoretical framework does the paper use to analyze economic growth?"
+    },
+    {
+      "correct_answer": "a",
+      "explanation": {
+        "additional_context": "The crowding-out effect is a critical consideration in the dynamics of public and private investments as discussed in the paper.",
+        "correct": "Public investment can have a crowding-out effect on private investment by competing for investment goods and utilizing physical and financial resources.",
+        "incorrect": {
+          "b": "Increased public debt is a concern but not directly discussed as an effect on private investment in this paper.",
+          "c": "There's no direct mention of reduction in technological innovation due to public investment.",
+          "d": "Decrease in labor force participation isn't discussed as a consequence of public investment."
+        }
+      },
+      "options": {
+        "a": "Crowding out effect",
+        "b": "Increased public debt",
+        "c": "Reduction in technological innovation",
+        "d": "Decrease in labor force participation"
+      },
+      "question": "According to the paper, what can be a negative effect of public investment on private investment?"
+    },
+    {
+      "correct_answer": "b",
+      "explanation": {
+        "additional_context": "Understanding the variability in empirical results is crucial for interpreting the nuanced impacts of public investment on economic growth.",
+        "correct": "Empirical studies revealed different results depending on the sample and method used, indicating varied results.",
+        "incorrect": {
+          "a": "There was no consistent finding of a negative impact across all studies.",
+          "c": "While positive impacts were often found, it was not consistent across all studies.",
+          "d": "Studies did find impacts, contradicting the notion of no impact at all."
+        }
+      },
+      "options": {
+        "a": "Consistently negative impact",
+        "b": "Varied results based on country and period",
+        "c": "Consistently positive impact",
+        "d": "No impact at all"
+      },
+      "question": "What did empirical studies in the paper reveal about the relationship between public investment and economic growth?"
+    },
+    {
+      "correct_answer": "b",
+      "explanation": {
+        "additional_context": "The Cobb-Douglas function's application to labor and capital provides insights into their contributions to economic output.",
+        "correct": "The Cobb-Douglas production function was used to identify the effect of labor and capital on output.",
+        "incorrect": {
+          "a": "While related to growth models, the Solow-Swan model is not specifically mentioned for analyzing labor and capital effects on output in this context.",
+          "c": "The Phillips curve deals with inflation and unemployment, not directly with labor and capital\u2019s effect on output.",
+          "d": "The IS-LM model discusses equilibrium but is not used here for labor and capital effects on output."
+        }
+      },
+      "options": {
+        "a": "Solow-Swan model",
+        "b": "Cobb-Douglas production function",
+        "c": "Phillips curve",
+        "d": "IS-LM model"
+      },
+      "question": "What model was used to identify the effect of labor and capital on output?"
+    }
+  ]
+}
+
+2025-03-26 17:47:51,153 - INFO - 127.0.0.1 - - [26/Mar/2025 17:47:51] "POST /api/generate-questions HTTP/1.1" 200 -
+2025-03-27 21:16:41,155 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://192.168.1.164:4000
+2025-03-27 21:16:41,156 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-27 21:16:41,193 - INFO -  * Restarting with watchdog (fsevents)
+2025-03-27 21:16:42,003 - WARNING -  * Debugger is active!
+2025-03-27 21:16:42,017 - INFO -  * Debugger PIN: 118-652-762
+2025-03-27 22:44:35,146 - INFO -  * Detected change in '/Users/mac/test_chat_with_paper/app.py', reloading
+2025-03-27 22:44:35,284 - INFO -  * Detected change in '/Users/mac/test_chat_with_paper/app.py', reloading
+2025-03-27 22:44:35,436 - INFO -  * Detected change in '/Users/mac/test_chat_with_paper/app.py', reloading
+2025-03-27 22:44:36,469 - INFO -  * Restarting with watchdog (fsevents)
+2025-03-27 22:44:37,710 - WARNING -  * Debugger is active!
+2025-03-27 22:44:37,717 - INFO -  * Debugger PIN: 118-652-762
+2025-03-27 22:50:55,808 - WARNING -  * Debugger is active!
+2025-03-27 22:50:55,822 - INFO -  * Debugger PIN: 118-652-762
+2025-03-27 22:53:07,954 - INFO -  * Detected change in '/Users/mac/test_chat_with_paper/app.py', reloading
+2025-03-27 22:53:08,106 - INFO -  * Detected change in '/Users/mac/test_chat_with_paper/app.py', reloading
+2025-03-27 22:53:09,215 - WARNING -  * Debugger is active!
+2025-03-27 22:53:09,220 - INFO -  * Debugger PIN: 118-652-762
+2025-03-28 09:25:01,456 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.164:8000
+2025-03-28 09:25:01,457 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 09:25:01,464 - INFO -  * Restarting with watchdog (fsevents)
+2025-03-28 09:25:02,101 - WARNING -  * Debugger is active!
+2025-03-28 09:25:02,108 - INFO -  * Debugger PIN: 118-652-762
